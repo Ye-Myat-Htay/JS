@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav, .sub {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            width: 240px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: darkblue;
+            border-right: 1px solid white;
+        }
+        .nav li a {
+            color: white;
+            display: block;
+            text-decoration: none;
+        }
+        .nav li a:hover {background: blue;}
+        .nav > li {float: left;}
+        .sub li {
+            border-top: 1px solid white;
+        }
+        .sub {display: none; } 
+        .nav > li:hover .sub {display: block}       
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Service &raquo;</a>
+            <ul class="sub">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">More</a></li>
+    </ul>
+</body>
+</html>
